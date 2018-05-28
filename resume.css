@@ -1,9 +1,9 @@
-body {font-family: "Helvetica Neue", Helvetica, Calibri, Arial, sans-serif; width: 70%; max-width: 800px; margin-left: auto; margin-right: auto;}
+body {font-family: "Helvetica Neue", Helvetica, Calibri, Arial, sans-serif; width: %; max-width: 800px; margin-left: auto; margin-right: auto;}
 address {font-size: 90%; color: #888; font-style: normal; text-align: center;}
 address>abbr {color: #000;  font-weight: bold;}
-h1 {color: #0080c0; font-size: 160%; text-align: center; border-bottom: #08a 1px solid; width: 50%; margin: 1em auto; padding-bottom: 0.5em;}
+h1 {color: #0080c0; font-size: 160%; text-align: center; border-bottom: #08a 1px solid; width: 50%; margin: 1em auto; padding-bottom: 0.5em; letter-spacing: -0.5px;}
 h2 {color: #00a0c0; font-size: 130%; margin-bottom: 1em; border-bottom: #c0e0e0 1px solid; padding-bottom: 0.5em;}
-h3 {color: #0080a0; font-size: 120%; margin-bottom: 0.25em;}
+h3 {color: #0080a0; font-size: 120%; margin-bottom: 0.75em; }
 h4 {color: #20a0c0; margin-top: 0; margin-bottom: 0;}
 h4+p {color: #60a0c0; margin-top: 0.2em; font-size: 90%;}
 h4>span{font-weight: normal;}
@@ -21,11 +21,12 @@ blockquote cite {background-color: inherit; font-weight: bold; margin-bottom: 0;
 blockquote address {text-align: left; margin-top: 0;}
 p {font-size: 90%; line-height: 150%;}
 a {font-weight: bold; color: #20a0c0;}
-sup>a{padding: 0.3em; color: #20a0c0;}
+sup>a {padding: 0.3em; color: #20a0c0;}
 sup>a::before{content:"[";}
 sup>a::after{content:"]";}
-h3#microsoft {background-image: url(../i/microsoft.png); text-indent: -9000px; background-repeat: no-repeat; height: 45px;}
-h3#skype {background-image: url(../i/skype-flat.png); text-indent: -9000px; background-repeat: no-repeat; height: 45px;}
+
+h3#microsoft {background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg); text-indent: -9000px; background-repeat: no-repeat; height: 32px;}
+h3#skype {background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1d/Logo_Skype.svg); text-indent: -9000px; background-repeat: no-repeat; height: 32px;}
 h3#three {background-image: url(../i/three_logo_blue.gif); text-indent: -9000px; background-repeat: no-repeat; height: 76px;}
 h3#ericsson {background-image: url(../i/ericsson.png); text-indent: -9000px; background-repeat: no-repeat; height: 47px;}
 h3#artistdirect {background-image: url(../i/artistdirect.png); text-indent: -9000px; background-repeat: no-repeat; height: 45px;}
