@@ -6,7 +6,7 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "DEBUG=Eleventy* eleventy"
   },
   "repository": {
     "type": "git",
