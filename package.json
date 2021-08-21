@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
     "debug": "DEBUG=Eleventy* eleventy"
   },
   "repository": {
