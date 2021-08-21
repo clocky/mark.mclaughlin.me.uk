@@ -3,42 +3,11 @@ title: Resumé/CV of Mark McLaughlin, mobile and devices UI designer
 layout: default.pug
 ---
 
-mixin figure(img, description)
-  figure
-    label(for="mn-" + img).margin-toggle &#8853;
-    input(type="checkbox", id="mn-" + img).margin-toggle
-    span.marginnote= description
-    img(src="img/"+ img + ".jpg", alt=description)
-
-mixin fullwidth(img)
-  figure.fullwidth
-    img(src="img/"+ img)
-
-mixin marginnote(id, text)
-  label(for=id).margin-toggle &#8853;
-  input(id=id, type="checkbox").margin-toggle
-  span.marginnote= text
-
-mixin sidenote(id, text)
-  label(for=id).margin-toggle.sidenote-number
-  input(id=id, type="textbox").margin-toggle 
-  span.sidenote= text
-
-mixin epigraph(quote, author, source)
-  .epigraph
-    blockquote 
-      p= quote
-      footer #{author}, 
-        cite #{source}
-
-mixin youtube(id)
-  figure.iframe-wrapper 
-    iframe(width=560, height=315, src="https://youtube.com/embed/" + id, title="YouTube video player", frameborder=0, allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+include _includes/mixins.pug
 
 article
   section
     h1 Mark McLaughlin
-
     p I'm an English-born, Irish designer and developer with over 20 years experience creating content and user interfaces for web, mobile web, native applications and hardware devices.
     p I've worked hand-in-hand with hardware partners, design teams, product managers and engineers to deliver compelling and user-friendly interfaces for almost every consumer electronics platform - mobile, desktop, augmented reality, smart TV's, game consoles and the web.
 
@@ -53,7 +22,7 @@ article
   section
     h3 Senior Design Manager, Developer Services
     p During the course of 2017, I managed a team of 8 individual contributors across Redmond, Raleigh and #[a(href="//www.microsoft.com/en-in/msidc/") Hyderabad] for the Developer Services group at Microsoft, building out experiences for distributed development teams that relied on the collaborative Azure DevOps suite; including work item tracking, repository management, component governance and other enterprise-scale features.
-    +figure("azure-devops")
+    +figure("azure-devops", "A photograph showing a person use the Azure DevOps product on a Windows laptop")
     p #[span.newthought A highlight], was how I initiated the usage of Figma#[+sidenote("sn-figma", "Within the product team at Figma, I'm infamously known as Patient Zero at Microsoft.")] across multiple design teams across Microsoft, including speaking and sharing best practices at internal events, and ultimately facilitating over 4,000 editors within the Developer Division, Dynamics, Microsoft 365, Windows, and Azure product teams to move to one centralised design tool.
 
   section
