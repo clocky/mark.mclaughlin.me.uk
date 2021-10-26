@@ -4,6 +4,7 @@
   "description": "Mark McLaughlin's one-page resumé",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "build": "eleventy",
     "start": "eleventy --serve",
     "debug": "DEBUG=Eleventy* eleventy"
@@ -22,6 +23,6 @@
   },
   "homepage": "https://github.com/clocky/mark.mclaughlin.me.uk#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^1.0.0-beta.3"
   }
 }

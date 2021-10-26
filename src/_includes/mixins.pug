@@ -5,9 +5,9 @@ mixin figure(img, description)
     span.marginnote= description
     img(src="img/"+ img + ".jpg", alt=description)
 
-mixin fullwidth(img)
+mixin fullwidth(img, description)
   figure.fullwidth
-    img(src="img/"+ img)
+    img(src="img/"+ img, alt=description)
 
 mixin marginnote(id, text)
   label(for=id).margin-toggle &#8853;
