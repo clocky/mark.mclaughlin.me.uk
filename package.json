@@ -23,10 +23,6 @@
   },
   "homepage": "https://github.com/clocky/mark.mclaughlin.me.uk#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  },
-  "resolutions": {
-    "localtunnel": "^2.0.2",
-    "axios": "^0.21.2"
+    "@11ty/eleventy": "^1.0.0-beta.3"
   }
 }
