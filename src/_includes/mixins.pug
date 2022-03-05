@@ -3,7 +3,7 @@ mixin figure(img, description)
     label(for="mn-" + img).margin-toggle &#8853;
     input(type="checkbox", id="mn-" + img).margin-toggle
     span.marginnote= description
-    img(src="img/"+ img + ".jpg", alt=description)
+    img(src="img/"+ img, alt=description)
 
 mixin fullwidth(img, description)
   figure.fullwidth
