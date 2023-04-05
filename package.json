@@ -24,11 +24,9 @@
   "homepage": "https://github.com/clocky/mark.mclaughlin.me.uk#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-vite": "^4.0.0",
     "sharp": "^0.32.0",
     "svgo": "^3.0.2",
     "vite-plugin-image-optimizer": "^1.1.2"
-  },
-  "dependencies": {
-    "@11ty/eleventy-plugin-vite": "^4.0.0"
   }
 }
