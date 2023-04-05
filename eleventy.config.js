@@ -20,7 +20,13 @@ module.exports = function (eleventyConfig) {
     viteOptions: {
       plugins: [
         ViteImageOptimizer({
-          /* pass your config */
+          jpg: {
+            quality: 80,
+          },
+          png: {
+            quality: 25,
+            dither: 0.5,
+          },
         }),
       ],
     },
