@@ -3,11 +3,11 @@ const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
 
 module.exports = function (eleventyConfig) {
   // Copy over Tufte fonts, and styles
-  eleventyConfig.addPassthroughCopy("src/et-book");
-  eleventyConfig.addPassthroughCopy("src/tufte.css");
+  eleventyConfig.addPassthroughCopy({ "src/assets/et-book": "css/et-book" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/css/": "css" });
 
   // Copy over images
-  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy({ "src/assets/images": "img" });
 
   // Make global filters accessible to Pug templates
   global.filters = eleventyConfig.javascriptFunctions;
