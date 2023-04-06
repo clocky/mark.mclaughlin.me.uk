@@ -2,6 +2,7 @@ const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
 
 module.exports = function (eleventyConfig) {
+
   // Copy over Tufte fonts, and styles
   eleventyConfig.addPassthroughCopy({ "src/assets/et-book": "css/et-book" });
   eleventyConfig.addPassthroughCopy({ "src/assets/css/": "css" });
