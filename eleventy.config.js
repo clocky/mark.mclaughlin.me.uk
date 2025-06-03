@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
     globals: ["filters"],
   });
 
-  // Instanciate the Vite plugin
+  // Instantiate the Vite plugin.
   eleventyConfig.addPlugin(EleventyVitePlugin, {
     viteOptions: {
       plugins: [
