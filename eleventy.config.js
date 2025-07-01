@@ -1,7 +1,9 @@
-const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
-const { ViteImageOptimizer } = require("vite-plugin-image-optimizer");
+import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import eleventyPug from "@11ty/eleventy-plugin-pug";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyPug);
 
   // Copy over Tufte fonts, and styles
   eleventyConfig.addPassthroughCopy({ "src/assets/et-book": "css/et-book" });
@@ -34,6 +36,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    templateFormats: ["pug", "md", "html"],
     dir: {
       input: "src",
       output: "dist",
