@@ -2,6 +2,7 @@
   "name": "mark.mclaughlin.me.uk",
   "version": "2.0.0",
   "description": "Mark McLaughlin's one-page resumé",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
@@ -22,10 +23,12 @@
   },
   "homepage": "https://github.com/clocky/mark.mclaughlin.me.uk#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-vite": "^4.0.0",
-    "sharp": "^0.32.6",
-    "svgo": "^3.0.2",
-    "vite-plugin-image-optimizer": "^1.1.7"
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-pug": "^1.0.0",
+    "@11ty/eleventy-plugin-vite": "^7.0.0",
+    "sharp": "^0.33.4",
+    "svgo": "^3.3.2",
+    "vite": "^7.0.0",
+    "vite-plugin-image-optimizer": "^1.1.8"
   }
 }
