@@ -22,13 +22,16 @@
     "url": "https://github.com/clocky/mark.mclaughlin.me.uk/issues"
   },
   "homepage": "https://github.com/clocky/mark.mclaughlin.me.uk#readme",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-pug": "^1.0.0",
     "@11ty/eleventy-plugin-vite": "^7.0.0",
     "sharp": "^0.33.4",
-    "svgo": "^3.3.2",
-    "vite": "^7.0.0",
+    "svgo": "^3.3.3",
+    "vite": "^7.3.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   }
 }
