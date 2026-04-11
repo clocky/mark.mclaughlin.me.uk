@@ -22,6 +22,9 @@
     "url": "https://github.com/clocky/mark.mclaughlin.me.uk/issues"
   },
   "homepage": "https://github.com/clocky/mark.mclaughlin.me.uk#readme",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-pug": "^1.0.0",
