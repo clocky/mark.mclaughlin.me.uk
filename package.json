@@ -30,7 +30,7 @@
     "@11ty/eleventy-plugin-pug": "^1.0.0",
     "@11ty/eleventy-plugin-vite": "^7.0.0",
     "sharp": "^0.33.4",
-    "svgo": "^3.3.3",
+    "svgo": "^3.3.4",
     "vite": "^7.3.2",
     "vite-plugin-image-optimizer": "^1.1.8"
   }
